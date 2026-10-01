@@ -31,11 +31,26 @@ const CertificateCard = ({ certificate, index, onPreview }) => {
         )}
 
         <div className="p-5">
-          <div className="flex items-center gap-2 mb-2">
-            <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/70 border border-blue-100 dark:border-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 shrink-0">
-              <FiAward className="w-4 h-4" />
+          <div className="flex items-center justify-between gap-2 mb-2">
+            <div className="flex items-center gap-2">
+              <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 border ${
+                certificate.category === 'Hackathon'
+                  ? 'bg-purple-50 dark:bg-purple-950/70 border-purple-200 dark:border-purple-800 text-purple-600 dark:text-purple-400'
+                  : 'bg-blue-50 dark:bg-blue-950/70 border-blue-100 dark:border-blue-900/50 text-blue-600 dark:text-blue-400'
+              }`}>
+                <FiAward className="w-4 h-4" />
+              </div>
+              {certificate.category && (
+                <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full border ${
+                  certificate.category === 'Hackathon'
+                    ? 'bg-purple-100/80 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 border-purple-200 dark:border-purple-800'
+                    : 'bg-blue-100/80 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800'
+                }`}>
+                  {certificate.category}
+                </span>
+              )}
             </div>
-            <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+            <span className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
               {certificate.issueDate || "Certified"}
             </span>
           </div>

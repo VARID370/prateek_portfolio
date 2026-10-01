@@ -97,9 +97,18 @@ export const educationData = [
 
 export const certificatesData = [
   {
+    title: "Adobe University Hackathon - Certificate of Participation",
+    issuer: "Adobe (via Unstop)",
+    issueDate: "August 2026",
+    category: "Hackathon",
+    certificateUrl: "/certificates/adobe-hackathon-certificate.pdf",
+    previewUrl: "/certificates/adobe-hackathon-certificate.png"
+  },
+  {
     title: "Programming Using C++",
     issuer: "Infosys Springboard",
     issueDate: "August 2025",
+    category: "Coursework",
     certificateUrl: "/certificates/cplusplus-certificate.pdf",
     previewUrl: "/certificates/cplusplus-certificate.png"
   },
@@ -107,6 +116,7 @@ export const certificatesData = [
     title: "Database Management System Part - 1",
     issuer: "Infosys Springboard",
     issueDate: "August 2026",
+    category: "Coursework",
     certificateUrl: "/certificates/dbms-certificate.pdf",
     previewUrl: "/certificates/dbms-certificate.png"
   },
@@ -114,6 +124,7 @@ export const certificatesData = [
     title: "Oracle Cloud Infrastructure Certified AI Foundations Associate",
     issuer: "Oracle",
     issueDate: "September 2026",
+    category: "Certification",
     certificateUrl: "/certificates/oracle-oci-ai-certificate.pdf",
     previewUrl: "/certificates/oracle-oci-ai-certificate.png"
   },
@@ -121,6 +132,7 @@ export const certificatesData = [
     title: "Oracle AI Database Certified Foundations Associate",
     issuer: "Oracle",
     issueDate: "September 2026",
+    category: "Certification",
     certificateUrl: "/certificates/oracle-ai-db-certificate.pdf",
     previewUrl: "/certificates/oracle-ai-db-certificate.png"
   },
@@ -128,6 +140,7 @@ export const certificatesData = [
     title: "Advanced Backend Development with Node.js, Express & MongoDB",
     issuer: "Lovely Professional University",
     issueDate: "August 2026",
+    category: "Certification",
     certificateUrl: "/certificates/lpu-backend-certificate.pdf",
     previewUrl: "/certificates/lpu-backend-certificate.png"
   }
