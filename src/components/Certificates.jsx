@@ -98,13 +98,21 @@ const Certificates = () => {
                 </button>
               </div>
 
-              {/* Modal Body - Image Preview */}
-              <div className="p-4 bg-slate-900 dark:bg-slate-950 flex-1 overflow-auto flex items-center justify-center min-h-[300px]">
-                <img
-                  src={selectedCert.previewUrl}
-                  alt={selectedCert.title}
-                  className="max-h-[65vh] w-auto object-contain rounded shadow-lg border border-slate-800"
-                />
+              {/* Modal Body - Image or PDF Preview */}
+              <div className="p-4 bg-slate-900 dark:bg-slate-950 flex-1 overflow-auto flex items-center justify-center min-h-[350px]">
+                {selectedCert.previewUrl?.endsWith('.pdf') ? (
+                  <iframe
+                    src={selectedCert.previewUrl}
+                    title={selectedCert.title}
+                    className="w-full h-[65vh] rounded-lg border-0 bg-white"
+                  />
+                ) : (
+                  <img
+                    src={selectedCert.previewUrl}
+                    alt={selectedCert.title}
+                    className="max-h-[65vh] w-auto object-contain rounded shadow-lg border border-slate-800"
+                  />
+                )}
               </div>
 
               {/* Modal Footer */}

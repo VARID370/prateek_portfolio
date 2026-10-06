@@ -12,17 +12,25 @@ const CertificateCard = ({ certificate, index, onPreview }) => {
       className="bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shadow-xs hover:shadow-lg transition-all hover:-translate-y-1 group"
     >
       <div>
-        {/* Certificate Image Thumbnail */}
+        {/* Certificate Image / PDF Thumbnail */}
         {certificate.previewUrl && (
           <div 
             onClick={() => onPreview && onPreview(certificate)}
-            className="relative cursor-pointer overflow-hidden bg-slate-100 dark:bg-slate-800 h-44 border-b border-slate-100 dark:border-slate-800"
+            className="relative cursor-pointer overflow-hidden bg-slate-100 dark:bg-slate-800 h-44 border-b border-slate-100 dark:border-slate-800 flex items-center justify-center"
           >
-            <img 
-              src={certificate.previewUrl} 
-              alt={certificate.title} 
-              className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
-            />
+            {certificate.previewUrl.endsWith('.pdf') ? (
+              <iframe
+                src={`${certificate.previewUrl}#toolbar=0&navpanes=0&scrollbar=0`}
+                title={certificate.title}
+                className="w-full h-full pointer-events-none object-cover"
+              />
+            ) : (
+              <img 
+                src={certificate.previewUrl} 
+                alt={certificate.title} 
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+              />
+            )}
             <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-medium text-xs">
               <FiEye className="w-4 h-4" />
               <span>Preview Certificate</span>

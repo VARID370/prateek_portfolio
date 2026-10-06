@@ -24,7 +24,7 @@ const Contact = () => {
     
     setLoading(true);
     try {
-      const response = await fetch("https://formsubmit.co/ajax/varidsharma2@gmail.com", {
+      const response = await fetch(`https://formsubmit.co/ajax/${personalInfo.email}`, {
         method: "POST",
         headers: { 
           'Content-Type': 'application/json',
@@ -96,7 +96,7 @@ const Contact = () => {
               Contact Information
             </h3>
             <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-              I am open to internship opportunities, project collaborations, and full stack developer roles.
+              I am open to internship opportunities, project collaborations, and software or data engineering roles.
             </p>
 
             <div className="space-y-4 pt-2">
@@ -144,7 +144,7 @@ const Contact = () => {
                 <div>
                   <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">LinkedIn</p>
                   <p className="text-sm font-semibold text-slate-800 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                    linkedin.com/in/varid-sharma-795042340
+                    {personalInfo.linkedin.replace('https://www.', '').replace('https://', '')}
                   </p>
                 </div>
               </a>

@@ -1,24 +1,24 @@
 import React from 'react';
 import { personalInfo } from '../data/portfolioData';
 import { motion } from 'framer-motion';
-import { FiCode, FiServer, FiCpu, FiBookOpen } from 'react-icons/fi';
+import { FiCode, FiDatabase, FiBookOpen, FiCpu } from 'react-icons/fi';
 
 const About = () => {
   const highlights = [
     {
       icon: <FiCode className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      title: "Frontend Development",
-      description: "Building responsive, modern user interfaces with React, JavaScript, and Tailwind CSS."
+      title: "Software Engineering",
+      description: "Building robust, efficient applications in Java, C++, and Python with strong DSA & OOP principles."
     },
     {
-      icon: <FiServer className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      title: "Backend Development",
-      description: "Developing RESTful web services and backend applications with Node.js, Express, and MongoDB."
+      icon: <FiDatabase className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      title: "Data Science & Analytics",
+      description: "Analyzing complex datasets, EDA, and building interactive dashboards with Power BI, Tableau, and Pandas."
     },
     {
       icon: <FiCpu className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      title: "Problem Solving & AI",
-      description: "Solving algorithmic problems and integrating modern AI technologies into functional apps."
+      title: "AI Tools & Utilities",
+      description: "Utilizing modern AI tools, developer utilities, and automation platforms to streamline development."
     },
     {
       icon: <FiBookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />,

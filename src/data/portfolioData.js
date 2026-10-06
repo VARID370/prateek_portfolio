@@ -1,18 +1,18 @@
 export const personalInfo = {
-  name: "Varid Sharma",
-  role: "Full Stack Web Developer | Computer Science Engineering Student",
-  heroTitle: "Hi, I'm Varid Sharma",
-  heroSubtext: "Full Stack Web Developer",
-  heroDescription: "Computer Science Engineering student focused on building modern, practical and user-friendly web applications.",
-  profileImage: "/profile.png",
+  name: "Prateek Bishnoi",
+  role: "Software Engineer | Data Science Engineer",
+  heroTitle: "Hi, I'm Prateek Bishnoi",
+  heroSubtext: "Software & Data Science Engineer",
+  heroDescription: "Computer Science undergraduate focused on building scalable software systems, data analytics dashboards, and data-driven solutions.",
+  profileImage: "/profile.jpg",
   about: [
-    "I am a third-year Computer Science Engineering student and Full Stack Web Developer interested in building practical and user-friendly web applications.",
-    "I work with technologies such as React, JavaScript, Node.js, Express.js, MongoDB, and Next.js.",
-    "I enjoy learning new technologies, solving problems, turning ideas into functional applications, and exploring modern web development and AI."
+    "I am a Computer Science undergraduate at Lovely Professional University with a strong foundation in Data Science, Software Engineering, Data Structures & Algorithms, and Database Systems.",
+    "Proficient in Java, C++, Python, and SQL with hands-on expertise in Data Analytics, EDA, AI tools, and building interactive dashboards using Power BI, Tableau, and Pandas.",
+    "Passionate about software engineering practices, scalable software architectures, operating systems, and leveraging modern AI utilities to enhance productivity."
   ],
-  email: "varidsharma2@gmail.com",
-  github: "https://github.com/VARID370",
-  linkedin: "https://www.linkedin.com/in/varid-sharma-795042340/",
+  email: "prateekbishnoi24@gmail.com",
+  github: "https://github.com/prateek2413",
+  linkedin: "https://www.linkedin.com/in/prateek-bishnoi-22823634a",
   resumePath: "/resume.pdf"
 };
 
@@ -29,119 +29,121 @@ export const navLinks = [
 
 export const skillCategories = [
   {
-    title: "Languages",
-    skills: ["C++", "JavaScript", "Python"]
+    title: "Programming Languages",
+    skills: ["Java", "Python", "C++", "SQL"]
   },
   {
-    title: "Frontend",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Next.js"]
+    title: "Data Science & Analytics",
+    skills: ["Power BI", "Tableau", "Pandas", "NumPy", "Matplotlib", "Seaborn", "EDA", "Excel"]
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Express.js", "REST APIs"]
+    title: "Tools & AI Utilities",
+    skills: ["AI Tools", "Jira", "GitHub", "Git", "Jupyter", "VS Code", "Google Colab"]
   },
   {
-    title: "Database",
-    skills: ["MongoDB", "MySQL"]
-  },
-  {
-    title: "Tools",
-    skills: ["Git", "GitHub", "VS Code", "Postman"]
+    title: "Core Concepts",
+    skills: ["Data Structures & Algorithms", "Object-Oriented Programming (OOP)", "DBMS", "Software Engineering", "Operating Systems", "Problem Solving"]
   }
 ];
 
 export const projects = [
   {
-    id: "approvalflow",
-    title: "ApprovalFlow",
-    description: "A multi-level document approval system where employees can submit documents and managers and directors can review and approve them through a structured workflow.",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Multer", "Socket.IO"],
-    githubUrl: "https://github.com/VARID370/approval-flow-new",
-    liveUrl: "https://approval-flow-new.onrender.com"
+    id: "smart-file-management-system",
+    title: "Smart File Management System",
+    description: "Engineered a C++ console-based file management system for organizing, managing, and accessing files efficiently using unique file IDs, folder hierarchy, duplicate prevention, and persistent file tracking.",
+    technologies: ["C++", "OOP", "Data Structures & Algorithms", "STL", "File Handling"],
+    githubUrl: "https://github.com/prateek2413",
+    liveUrl: "https://github.com/prateek2413"
   },
   {
-    id: "ai-treasure-hunt",
-    title: "AI Treasure Hunt",
-    description: "An interactive AI-powered treasure hunt game that generates riddles and clues and provides an AI chatbot to help players when they get stuck.",
-    technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "Gemini API"],
-    githubUrl: "https://github.com/VARID370/ai-treasure-hunt",
-    liveUrl: "https://ai-treasure-hunt-fixed.onrender.com"
+    id: "air-pollution-analysis-dashboard",
+    title: "Air Pollution Analysis Dashboard",
+    description: "Built an interactive air pollution dashboard using Python to analyze patterns across cities and states. Performed data cleaning and EDA using Pandas/NumPy on government data with interactive filters and KPI metrics.",
+    technologies: ["Python", "Pandas", "NumPy", "Panel", "Matplotlib", "Seaborn"],
+    githubUrl: "https://github.com/prateek2413",
+    liveUrl: "https://github.com/prateek2413"
   },
   {
-    id: "hostel-management-system",
-    title: "Hostel Management System",
-    description: "A hostel management platform for managing meals, attendance, billing, menu information, wastage reports, and administrative operations.",
-    technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB", "JWT", "bcrypt"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
+    id: "air-quality-analysis-visualization",
+    title: "Air Quality Analysis & Visualization",
+    description: "Designed an interactive Power BI dashboard using government-sourced air quality data to analyze pollution trends, pollutant levels, and regional variations with interactive maps and visual drill-downs.",
+    technologies: ["Power BI", "Data Analytics", "Data Visualization", "SQL"],
+    githubUrl: "https://github.com/prateek2413",
+    liveUrl: "https://github.com/prateek2413"
   },
   {
-    id: "adaptive-resource-allocation",
-    title: "Adaptive Resource Allocation Simulator",
-    description: "A simulation tool that demonstrates CPU and memory resource allocation using process states and system resource monitoring.",
-    technologies: ["Python", "Tkinter", "psutil"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
+    id: "deloitte-data-analytics-simulation",
+    title: "Deloitte - Data Analytics Job Simulation",
+    description: "Virtual job simulation via Forage in data analysis and forensic technology. Designed a Tableau dashboard to analyze data and communicate key insights with Excel-based data classification.",
+    technologies: ["Tableau", "Excel", "Data Analytics", "Forensic Technology"],
+    githubUrl: "https://github.com/prateek2413",
+    liveUrl: "https://github.com/prateek2413"
   }
 ];
 
 export const educationData = [
   {
     degree: "Bachelor of Technology",
-    field: "Computer Science Engineering",
+    field: "Computer Science and Engineering",
     institution: "Lovely Professional University",
-    duration: "2024 - 2028",
-    status: "Third-Year Student"
+    duration: "Aug 2024 – Present",
+    status: "CGPA: 8.54 | Phagwara, Punjab"
+  },
+  {
+    degree: "Intermediate (Class XII)",
+    field: "Science Stream",
+    institution: "Spring Dales Public School",
+    duration: "Apr 2023 – May 2024",
+    status: "Percentage: 85% | Meerut, UP"
+  },
+  {
+    degree: "Matriculation (Class X)",
+    field: "General Education",
+    institution: "Vidya Deep Global School",
+    duration: "Apr 2021 – May 2022",
+    status: "Percentage: 86% | Meerut, UP"
   }
 ];
 
 export const certificatesData = [
-  {
-    title: "Adobe University Hackathon - Certificate of Participation",
-    issuer: "Adobe (via Unstop)",
-    issueDate: "August 2026",
-    category: "Hackathon",
-    certificateUrl: "/certificates/adobe-hackathon-certificate.pdf",
-    previewUrl: "/certificates/adobe-hackathon-certificate.png"
-  },
-  {
-    title: "Programming Using C++",
-    issuer: "Infosys Springboard",
-    issueDate: "August 2025",
-    category: "Coursework",
-    certificateUrl: "/certificates/cplusplus-certificate.pdf",
-    previewUrl: "/certificates/cplusplus-certificate.png"
-  },
   {
     title: "Database Management System Part - 1",
     issuer: "Infosys Springboard",
     issueDate: "August 2026",
     category: "Coursework",
     certificateUrl: "/certificates/dbms-certificate.pdf",
-    previewUrl: "/certificates/dbms-certificate.png"
+    previewUrl: "/certificates/dbms-certificate.pdf"
   },
   {
-    title: "Oracle Cloud Infrastructure Certified AI Foundations Associate",
-    issuer: "Oracle",
-    issueDate: "September 2026",
+    title: "Deloitte - Data Analytics Job Simulation",
+    issuer: "Deloitte (via Forage)",
+    issueDate: "June 2026",
     category: "Certification",
-    certificateUrl: "/certificates/oracle-oci-ai-certificate.pdf",
-    previewUrl: "/certificates/oracle-oci-ai-certificate.png"
+    certificateUrl: "/certificates/deloitte-certificate.pdf",
+    previewUrl: "/certificates/deloitte-certificate.pdf"
   },
   {
-    title: "Oracle AI Database Certified Foundations Associate",
-    issuer: "Oracle",
-    issueDate: "September 2026",
-    category: "Certification",
-    certificateUrl: "/certificates/oracle-ai-db-certificate.pdf",
-    previewUrl: "/certificates/oracle-ai-db-certificate.png"
-  },
-  {
-    title: "Advanced Backend Development with Node.js, Express & MongoDB",
+    title: "Master Data Structures & Algorithms",
     issuer: "Lovely Professional University",
     issueDate: "August 2026",
     category: "Certification",
-    certificateUrl: "/certificates/lpu-backend-certificate.pdf",
-    previewUrl: "/certificates/lpu-backend-certificate.png"
+    certificateUrl: "/certificates/lpu-dsa-certificate.jpg",
+    previewUrl: "/certificates/lpu-dsa-certificate.jpg"
+  },
+  {
+    title: "Introduction to AI & ML",
+    issuer: "Skillera",
+    issueDate: "March 2025",
+    category: "Certification",
+    certificateUrl: "/certificates/ai-ml-certificate.jpg",
+    previewUrl: "/certificates/ai-ml-certificate.jpg"
+  },
+  {
+    title: "C Programming",
+    issuer: "CSE Pathshala",
+    issueDate: "January 2025",
+    category: "Coursework",
+    certificateUrl: "/certificates/c-programming-certificate.jpg",
+    previewUrl: "/certificates/c-programming-certificate.jpg"
   }
 ];

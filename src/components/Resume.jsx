@@ -33,7 +33,7 @@ const Resume = () => {
           <div className="z-10 w-full md:w-auto shrink-0">
             <a
               href={personalInfo.resumePath}
-              download="Varid_Sharma_Resume.pdf"
+              download={`${personalInfo.name.replace(/\s+/g, '_')}_Resume.pdf`}
               className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-base shadow-md transition-all hover:scale-105"
             >
               <FiDownload className="w-5 h-5" />

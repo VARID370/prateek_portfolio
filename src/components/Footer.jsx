@@ -15,7 +15,7 @@ const Footer = () => {
             {personalInfo.name}
           </h3>
           <p className="text-sm text-slate-400 font-medium">
-            Full Stack Web Developer
+            {personalInfo.role}
           </p>
         </div>
 

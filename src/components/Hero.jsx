@@ -44,7 +44,7 @@ const Hero = () => {
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200/60 dark:border-blue-800/60 text-blue-700 dark:text-blue-300 text-sm font-medium mb-6"
         >
           <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 animate-pulse"></span>
-          Full Stack Web Developer & CSE Student
+          {personalInfo.role}
         </motion.div>
 
         {/* Main Heading */}
@@ -93,7 +93,7 @@ const Hero = () => {
           </a>
           <a
             href={personalInfo.resumePath}
-            download="Varid_Sharma_Resume.pdf"
+            download={`${personalInfo.name.replace(/\s+/g, '_')}_Resume.pdf`}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 font-semibold text-base border border-slate-200 dark:border-slate-700 transition-all"
           >
             <FiDownload className="w-4 h-4 text-slate-600 dark:text-slate-400" />
